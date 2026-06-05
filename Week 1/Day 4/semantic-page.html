@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Semantic HTML</title>
+    </head>
+    <body>
+        <header>
+        <h1>Semantic Articles Using HTML</h1>
+            <nav>
+                <ul type = "none">
+                    <li>
+                        <a href = "#home">Home</a>
+                        |
+                        <a href = "#about">About Us</a>
+                        |
+                        <a href = "#blog">Blog's</a>
+                        |
+                        <a href = "#Contact">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <section id = "blog">
+                <h2>Latest Blog Post's</h2>
+
+                <!-- Article 1 -->
+                <article>
+                    <header>
+                        <h3>1] Getting Started with HTML</h3>
+                        <p>
+                            Published On :
+                            <time datetime = "2026-06-05">June 5 ,2026</time>
+                        </p>
+                    </header>
+
+                    <figure>
+                        <img src = "https://picsum.photos/450/300"
+                            alt = "Getting Started with HTML"
+                            caption = "Getting Started with HTML">
+                    </figure>
+
+                    <p>
+                        HTML (HyperText Markup Language) is the standard language for creating web pages. It provides the structure and content of a webpage, allowing developers to create visually appealing and interactive websites. In this article, we will explore the basics of HTML and how to get started with it.
+                    </p>
+                    <p>
+                        To begin with, HTML uses a system of tags to define different elements on a webpage. These tags are enclosed in angle brackets (< >) and typically come in pairs, with an opening tag and a closing tag. For example, the p tag is used to define a paragraph, and it is closed with /p. HTML also allows for the use of attributes within tags to provide additional information or functionality. For instance, the img tag can include attributes like src (source) and alt (alternative text) to specify the image source and provide a description for accessibility purposes.
+                    </p>
+
+                    <footer>
+                        <p>Author : Atharv Pote</p>
+                    </footer>
+                </article>
+                <hr>
+
+                <!-- Article 2 -->
+                <article>
+                    <header>
+                        <h3>2] The Importance of Semantic HTML</h3>
+                        <p>
+                            Published On :
+                            <time datetime = "2026-06-10">June 10 ,2026</time>
+                        </p>
+                    </header>
+
+                    <figure>
+                        <img src = "https://picsum.photos/450/300"
+                            alt = "The Importance of Semantic HTML"
+                            caption = "The Importance of Semantic HTML">
+                    </figure>
+
+                    <p>
+                        Semantic HTML is a crucial aspect of web development that focuses on using meaningful and descriptive tags to structure web content. It enhances the accessibility, SEO, and overall user experience of a website. By using semantic tags such as header, nav, article, section, and footer, developers can provide clear context and hierarchy to the content, making it easier for both users and search engines to understand the purpose and structure of the webpage.
+                    </p>
+                    <p>
+                        One of the key benefits of semantic HTML is improved accessibility. Screen readers and assistive technologies rely on semantic tags to navigate and interpret web content effectively. For example, using the nav tag for navigation menus allows screen readers to identify and announce the presence of a navigation section, making it easier for users with disabilities to navigate through the website. Additionally, semantic HTML can enhance SEO by providing search engines with better context about the content, leading to improved rankings in search results.
+                    </p>
+
+                    <footer>
+                        <p>Author : Atharv Pote</p>
+                    </footer>
+                </article>
+                <hr>
+
+                <!-- Article 3 -->
+                <article>
+                    <header>
+                        <h3>3] JavaScript ES6 Features Every Developer Should Know</h3>
+                        <p>
+                            Published On :
+                            <time datetime = "2026-06-15">June 15 ,2026</time>
+                        </p>
+                    </header>
+
+                    <figure>
+                        <img src = "https://picsum.photos/450/300"
+                            alt = "JavaScript ES6 Features Every Developer Should Know"
+                            caption = "JavaScript ES6 Features Every Developer Should Know">
+                    </figure>
+
+                    <p>
+                        JavaScript ES6 (ECMAScript 2015) introduced several new features that have significantly improved the way developers write JavaScript code. These features include arrow functions, template literals, destructuring assignment, default parameters, and more. In this article, we will explore some of the most important ES6 features that every developer should know.
+                    </p>
+                    <p>
+                        Arrow functions provide a more concise syntax for writing functions, making the code cleaner and easier to read. Template literals allow developers to embed expressions and create multi-line strings without the need for concatenation. Destructuring assignment enables developers to extract values from arrays or objects and assign them to variables in a more efficient way. Default parameters allow developers to set default values for function parameters, making it easier to handle cases where arguments may be missing.
+                    </p>
+
+                    <footer>
+                        <p>Author : Atharv Pote</p>
+                    </footer>
+                </article>
+                <hr>
+            </section>    
+        </main>
+    </body>
+</html>
+
+
+<!-- Question & Answer's -->
+<!-- Lists & Navigationhtml
+  Difference: <ul> is an unordered list (bullets), used when item order doesn't 
+  matter (e.g., a grocery list). <ol> is an ordered list (numbers), used for 
+  sequential steps (e.g., a recipe).
+
+  Navigation menus use list-style: none because <ul> provides semantic 
+  structure for screen readers (grouping links), whereas deleting the tag 
+  removes that structural context for accessibility.
+
+Q5: Table Headers vs. Datahtml
+  Difference: <th> represents a header cell, while <td> represents data. 
+  Semantic Use: Using <th> instead of bolded <td> is vital for accessibility; 
+  screen readers announce <th> text as a label for the corresponding data 
+  cells, helping visually impaired users navigate complex data.
+
+Q6: GET vs. POSThtml
+  Difference: GET sends data via the URL (visible, bookmarkable, length-limited). 
+  POST sends data in the request body (private, no size limit).
+  
+  Security: Never use GET for login forms because credentials (passwords) 
+  would appear in the browser history and server logs.
+  Example URL: https://example.com
+
+Q7: Labels vs. Placeholdershtml
+  Importance of <label>: It connects text to an input, increasing the clickable 
+  hit area (UX) and allowing screen readers to identify the field (Accessibility).
+  
+  Why placeholder isn't a replacement: 
+  1. Accessibility: Screen readers often skip placeholders. 
+  2. UX: Placeholders disappear when the user starts typing, causing users 
+     to lose context of what the field was for.
+
+Q9: Table Accessibility Summaryhtml 
+  Accessibility Summary:
+  1. Use <caption> to describe the table's purpose.
+  2. Use <thead>, <tbody>, and <tfoot> for structural clarity.
+  3. Use <th scope="..."> to explicitly link headers to columns/rows.
+  4. Avoid complex nested tables which confuse assistive technologies.
+
+  Scope Attribute: Defines if a <th> is a header for a row or column.
+  - scope="col": Identifies the cell as a header for the vertical column.
+  - scope="row": Identifies the cell as a header for the horizontal row.  
+
+-->

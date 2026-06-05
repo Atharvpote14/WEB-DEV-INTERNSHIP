@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>List Examples</title>
+
+        <h2>Fake Navigation Menu</h2>
+    
+        <ul type="none">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    
+      
+
+    <hr>
+    </head>
+    <body>
+       <h1>HTML List Examples</h1>
+       
+       <h2>My favourite websites</h2>
+
+         <ul type = "square">
+              <li>
+                <a href = "https://www.google.com" 
+                target = "_blank" 
+                rel = "noopener noreferrer">
+                Google</a></li>
+        </ul>
+        <ul type = "circle">
+              <li>
+                <a href = "https://www.facebook.com" 
+                target = "_blank" 
+                rel = "noopener noreferrer">
+                Facebook</a></li>
+        </ul>
+        <ul type = "disc">
+              <li>
+                <a href = "https://www.youtube.com" 
+                target = "_blank" 
+                rel = "noopener noreferrer">
+                YouTube</a></li>
+        </ul>
+        <ul type = "none">
+              <li>
+                <a href = "https://www.linkedin.com" 
+                target = "_blank" 
+                rel = "noopener noreferrer">
+                LinkedIn</a></li>
+        </ul>
+        <hr>
+
+        <h2>How to Build a Website</h2>
+        <ol>
+          <li>Plan the Website</li>
+          <li>Create the Design</li>
+          <li>Write HTML Structure</li>
+          <li>Add CSS Styling</li>
+          <li>Test and Publish</li>
+        </ol>
+        <hr>
+
+        <h2>Full Nested Syllabus List</h2>
+        <ul>
+            <li>Week 1
+                <ul>
+                    <li>Day 1</li>
+                    <li>Day 2</li>
+                    <li>Day 3</li>
+                </ul>
+            </li>
+
+            <li>Week 2
+                <ul>
+                    <li>Day 1</li>
+                    <li>Day 2</li>
+                    <li>Day 3</li>
+                </ul>
+            </li>
+
+            <li>Week 3
+                <ul>
+                    <li>Day 1</li>
+                    <li>Day 2</li>
+                    <li>Day 3</li>
+                </ul>
+            </li>
+        </ul>
+        <hr>
+
+        <ul type = "Square">
+          <li>
+            <h2>Defination List With 6 Dev Terms</h2>
+          </li>
+        </ul>
+          
+          <dl>
+              <dt>HTML :</dt>
+
+              <dd>Hypertext Markup Language </dd>
+
+              <dt>CSS :</dt>
+
+              <dd>Cascading Style Sheets </dd>
+
+              <dt>JavaScript :</dt>
+
+              <dd>A programming language for web development </dd>
+
+              <dt>React :</dt>
+
+              <dd>A JavaScript library for building user interfaces </dd>
+
+              <dt>Node.js :</dt>
+
+              <dd>A JavaScript runtime built on Chrome's V8 JavaScript engine </dd>
+
+              <dt>Git :</dt>
+
+              <dd>A distributed version control system </dd>
+          </dl>        
+        <hr>
+  </body>
+</html>
+
+<!-- Question's & Answer's 
+
+1]Write a comment explaining: "What is the difference between <ul> and <ol>? Give a real-world example of when you would use each one." Also explain why navigation menus use type="none" instead of just deleting the ul tag.
+=> <ul> (Unordered List)Difference: Represents a list of items where the order does not matter. By default, it displays with bullet points.Real-world Example: A grocery list or a list of ingredients for a recipe. It doesn't matter if you buy the apples or the bread first.
+  
+<ol> (Ordered List)Difference: Represents a list of items where the order is essential. By default, it displays with numbers or letters.Real-world Example: A set of instructions or a top 10 countdown. If you perform step 3 before step 1, the result will likely be wrong.
+
+Even if you don't want bullets in your navigation menu, developers keep the <ul> tag for several critical reasons:
+  
+Semantics & Accessibility: Screen readers identify the navigation as a "list of items." This tells visually impaired users exactly how many links are in the menu and that the items are related.
+
+Structural Meaning: It defines the content as a collection of related links rather than just a random group of <a> or <div> tags scattered on the page.
+  
+Styling Flexibility: Having a parent container (<ul>) and child items (<li>) makes it much easier to apply CSS layouts like Flexbox or Grid to align the menu items consistently.
+  
+-->

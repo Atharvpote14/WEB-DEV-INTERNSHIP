@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html lang="en">   <!-- Root element. lang="en" helps screen readers & SEO -->
+
+  <head>           <!-- Invisible section: metadata, title, CSS links -->
+    <meta charset="UTF-8">
+    <!-- UTF-8 supports all characters including Hindi, emojis, etc. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the page work properly on mobile phones -->
+
+    <title>My First Webpage</title>
+    <!-- Text shown on the browser tab -->
+     <h1>Main Page Title — Used Once Per Page</h1>
+
+<form action="/search" method="GET">
+    <!-- Use GET for search forms, filters — data is bookmarkable -->
+
+
+<!-- POST method: data sent in request body, not visible in URL -->
+
+
+<label for="name">Username</label>
+<input type="text" id="username" name="username">
+<!-- for="username" matches id="username" -->
+
+<!-- Method 2: wrapping (label wraps the input) -->
+<label>
+    Email Address
+    <input type="email" name="email">
+</label>
+<form>
+
+    <fieldset>
+        <legend>Personal Information</legend>
+        <!-- Inputs for name, age, city etc -->
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="father fname">
+    </fieldset>
+
+    <fieldset>
+        <legend>Account Details</legend>
+        <!-- Inputs for email, password etc -->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+    </fieldset>
+
+</form>
+<label for="fullname">Full Name</label>
+<input
+    type="text"
+    id="fullname"
+    name="fullname"
+    placeholder="e.g. Sai Randive"
+    required
+    minlength="2"
+    maxlength="50"
+>
+
+<!-- EMAIL — validates email format automatically -->
+<label for="email">Email Address</label>
+<input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="hr@proazuresoft.com"
+    required
+>
+<!-- Browser auto-validates: must contain @ and a domain -->
+
+<!-- PASSWORD — hides characters as dots -->
+<label for="pwd">Password</label>
+<input
+    type="password"
+    id="pwd"
+    name="password"
+    minlength="8"
+    required
+>
+
+<label for="aadhar">Adhar number</label>
+<input
+    type="number"
+    id="aadhar"
+    name="aadhar"
+    character="12"
+    
+    required
+>
+
+<!-- NUMBER — only accepts numbers, shows spinner arrows -->
+<label for="age">Age</label>
+<input
+    type="number"
+    id="age"
+    name="age"
+    min="18"
+    max="60"
+    value="21"
+>
+
+<!-- TEL — for phone numbers, triggers phone keyboard on mobile -->
+<label for="phone">Mobile Number</label>
+<input
+    type="tel"
+    id="phone"
+    name="phone"
+    pattern="[0-9]{10}"
+    placeholder="10-digit number"
+>
+<!-- pattern="[0-9]{10}" means exactly 10 digits -->
+
+<!-- DATE — shows date picker calendar -->
+<label for="dob">Date of Birth</label>
+<input
+    type="date"
+    id="dob"
+    name="dob"
+    min="1990-01-01"
+    max="2008-12-31"
+>
+<br>
+<label for="about">address</label>
+<br>
+<textarea
+    id="address"
+    name="address"
+    rows="5"
+    cols="40"
+    placeholder="Enter your address"
+    maxlength="500"
+    required
+></textarea>
+<!-- RANGE — slider input -->
+<label for="exp">Experience (years): </label>
+<input
+    type="range"
+    id="exp"
+    name="experience"
+    min="0"
+    max="12"
+    step="3"
+    value="0"
+>
+
+<!-- FILE — lets user choose a file from their computer -->
+<label for="resume">Upload Resume</label>
+<input
+    type="file"
+    id="resume"
+    name="resume"
+    accept=".pdf,.doc,.docx, .html, .mp3"
+>
+<fieldset>
+    <legend>Select Your Course Track</legend>
+
+    <!-- ALL three share name="track" → only ONE can be selected -->
+    <input type="radio" id="frontend" name="track" value="frontend" checked>
+    <label for="frontend">Frontend Development</label>
+    <!-- checked = pre-selected option -->
+    <br>
+
+    <input type="radio" id="backend" name="track" value="backend" checked>
+    <label for="backend">Backend Development</label>
+    <br>
+
+    <input type="radio" id="fullstack" name="track" value="fullstack" checke>
+    <label for="fullstack">Full Stack (MERN)</label>
+
+</fieldset>
+<fieldset>
+    <legend>Technologies You Know (Select All That Apply)</legend>
+
+    <input type="checkbox" id="know-html" name="skills" value="html">
+    <label for="know-html">HTML</label><br>
+
+    <input type="checkbox" id="know-css" name="skills" value="css">
+    <label for="know-css">CSS</label><br>
+
+    <input type="checkbox" id="know-js" name="skills" value="javascript">
+    <label for="know-js">JavaScript</label><br>
+
+    <input type="checkbox" id="know-react" name="skills" value="react">
+    <label for="know-react">React</label>
+
+</fieldset>
+
+<label for="city">Select Your City</label>
+<select id="city" name="city" required>
+
+    <!-- First option is a placeholder prompt -->
+    <option value="" disabled selected>-- Select City --</option>
+
+    <!-- optgroup groups related options with a label heading -->
+    <optgroup label="Maharashtra">
+        <option value="pune">Pune</option>
+        <option value="mumbai" selected>Mumbai</option>
+        <!-- selected = pre-selected option -->
+        <option value="nagpur">Nagpur</option>
+    </optgroup>
+
+    <optgroup label="Karnataka">
+        <option value="bangalore">Bangalore</option>
+        <option value="mysore">Mysore</option>
+    </optgroup>
+
+</select>
+
+<!-- Multiple select: hold Ctrl/Cmd to select multiple -->
+<label for="skills-drop">Skills (hold Ctrl for multiple)</label>
+<select id="skills-drop" name="skills" multiple size="4">
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="js">JavaScript</option>
+    <option value="react">React</option>
+</select>
+<!-- INPUT type submit -->
+<input type="submit" value="Register Now">
+<!-- value = the button text shown -->
+
+<!-- INPUT type reset — clears all form fields -->
+<input type="reset" value="Clear Form">
+
+<!-- BUTTON tag — more flexible than input type submit -->
+<button type="submit">Register Now</button>
+<!-- <button> can contain HTML (icons, images etc) -->
+<button type="reset">🗑️ Clear</button>
+
+<!-- HIDDEN input — sends data without showing it to user -->
+<input type="hidden" name="course_id" value="web-dev-2026">
+</form>
+<br>
+<br>
+<br>
+<main>
+
+  <!-- SECTION: groups related content on this page -->
+  <!-- Always give section a heading (h2, h3 etc) -->
+  <section>
+    <h2>Our Latest Blog Posts</h2>
+
+    <!-- ARTICLE: each blog post is standalone, independently shareable -->
+    <article>
+      <header>
+        <!-- header INSIDE article = article header, not page header -->
+        <h3>How to Build a REST API with Node.js</h3>
+        <p>By Sai Randive — Published 
+          <time datetime="2026-06-01">June 1, 2026</time>
+        </p>
+      </header>
+
+      <p>In this tutorial we build a complete REST API using Express.js...</p>
+
+      <!-- FIGURE + FIGCAPTION: image with a caption -->
+      <figure>
+        <img
+          src="https://picsum.photos/seed/api/600/300"
+          alt="Code editor showing Node.js REST API setup"
+          width="600"
+          loading="lazy"
+        >
+        <figcaption>Node.js and Express setup for a basic REST API</figcaption>
+      </figure>
+
+      <footer>
+        <!-- footer INSIDE article = article metadata/footer -->
+        <p>Tags: Node.js, Express, REST, API</p>
+      </footer>
+    </article>
+
+    <article>
+      <header>
+        <h3>CSS Flexbox vs Grid — When to Use Which</h3>
+        <p>Published <time datetime="2026-05-28">May 28, 2026</time></p>
+      </header>
+      <p>Flexbox is 1-dimensional. Grid is 2-dimensional. Here is when to use each...</p>
+    </article>
+
+  </section>
+
+  <!-- ASIDE: related content, tangential to main content -->
+  <aside>
+    <h2>About the Author</h2>
+    <p>Sai Randive is a full-stack developer and instructor at ProAzure.</p>
+    <h2>Popular Articles</h2>
+    <ul>
+      <li><a href="#">HTML in 1 Day</a></li>
+      <li><a href="#">CSS Flexbox Guide</a></li>
+      <li><a href="#">JavaScript for Beginners</a></li>
+    </ul>
+  </aside>
+
+</main>
+
+<h1>ProAzure Web Dev Internship 2026</h1>
+<h2>Student Registration Form</h2>
+<p>Fill out all required fields and click <strong>Submit Registration</strong>.</p>
+<hr>
+
+<form action="/register" method="POST">
+
+    <!-- ══ SECTION 1: PERSONAL INFORMATION ══ -->
+    <fieldset>
+        <legend>1. Personal Information</legend>
+
+        <!-- Full Name -->
+        <label for="fullname">Full Name *</label><br>
+        <input type="text" id="fullname" name="fullname"
+               placeholder="e.g. Sai Randive" required minlength="2">
+        <br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth *</label><br>
+        <input type="date" id="dob" name="dob"
+               min="1990-01-01" max="2008-12-31" required>
+        <br><br>
+
+        <!-- Gender Radio Buttons -->
+        <p>Gender *</p>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Prefer not to say</label>
+        <br><br>
+
+        <!-- City Dropdown -->
+        <label for="city">City *</label><br>
+        <select id="city" name="city" required>
+            <option value="" disabled selected>-- Select your city --</option>
+            <optgroup label="Maharashtra">
+                <option value="pune">Pune</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="nagpur">Nagpur</option>
+            </optgroup>
+            <optgroup label="Karnataka">
+                <option value="bangalore">Bangalore</option>
+            </optgroup>
+            <optgroup label="Other">
+                <option value="other">Other City</option>
+            </optgroup>
+        </select>
+    </fieldset>
+
+    <!-- ══ SECTION 2: ACCOUNT DETAILS ══ -->
+    <fieldset>
+        <legend>2. Account Details</legend>
+
+        <!-- Email -->
+        <label for="email">Email Address *</label><br>
+        <input type="email" id="email" name="email"
+               placeholder="yourname@gmail.com" required>
+        <br><br>
+
+        <!-- Phone -->
+        <label for="phone">Mobile Number *</label><br>
+        <input type="tel" id="phone" name="phone"
+               pattern="[0-9]{10}" placeholder="10-digit number" required>
+        <br><br>
+
+        <!-- Password -->
+        <label for="pwd">Create Password *</label><br>
+        <input type="password" id="pwd" name="password"
+               minlength="8" placeholder="Minimum 8 characters" required>
+    </fieldset>
+
+    <!-- ══ SECTION 3: COURSE PREFERENCES ══ -->
+    <fieldset>
+        <legend>3. Course Preferences</legend>
+
+        <!-- Batch Time: Radio -->
+        <p>Preferred Batch Time *</p>
+        <input type="radio" id="morning" name="batch" value="morning" required>
+        <label for="morning">Morning (9am–11am)</label><br>
+
+        <input type="radio" id="afternoon" name="batch" value="afternoon" checked>
+        <label for="afternoon">Afternoon (2pm–4pm)</label><br>
+
+        <input type="radio" id="evening" name="batch" value="evening">
+        <label for="evening">Evening (6pm–8pm)</label>
+        <br><br>
+
+        <!-- Prior Knowledge: Checkboxes -->
+        <p>Prior Knowledge (Check All That Apply)</p>
+        <input type="checkbox" id="ck-html" name="knowledge" value="html">
+        <label for="ck-html">Basic HTML</label><br>
+
+        <input type="checkbox" id="ck-css" name="knowledge" value="css">
+        <label for="ck-css">Basic CSS</label><br>
+
+        <input type="checkbox" id="ck-js" name="knowledge" value="js">
+        <label for="ck-js">Basic JavaScript</label><br>
+
+        <input type="checkbox" id="ck-none" name="knowledge" value="none" checked>>
+        <label for="ck-none">No Prior Experience</label>
+    </fieldset>
+
+    <!-- ══ SECTION 4: ABOUT YOURSELF ══ -->
+    <fieldset>
+        <legend>4. Tell Us More</legend>
+
+        <!-- Textarea -->
+        <label for="bio">Why do you want to learn web development? *</label><br>
+        <textarea
+            id="bio" name="motivation"
+            rows="5" cols="40"
+            placeholder="Share your goals and motivation..."
+            maxlength="300"
+            required
+        ></textarea>
+        <br><br>
+
+        <!-- Resume upload -->
+        <label for="resume">Upload Resume (PDF or Word)</label><br>
+        <input type="file" id="resume" name="resume"
+               accept=".pdf,.doc,.docx">
+        <br><br>
+
+        <!-- Terms checkbox -->
+        <input type="checkbox" id="terms" name="terms" value="agreed" required>
+        <label for="terms">I agree to the 
+            <a href="#" target="_blank" rel="noopener">Terms and Conditions</a>
+        </label>
+        <!-- required on checkbox: user MUST check it before submitting -->
+    </fieldset>
+
+    <!-- Hidden field: sends batch ID without showing it -->
+    <input type="hidden" name="batch_id" value="proazure-2026-june">
+    <br>
+
+    <!-- Submit and Reset -->
+    <button type="submit">✅ Submit Registration</button>
+    <button type="reset">🗑️ Clear Form</button>
+
+</form>
+
+
+
+
+
+
+  </body>
+
+</html>
