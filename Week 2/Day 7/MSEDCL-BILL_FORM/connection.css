@@ -1,55 +1,61 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
     font-family: Arial, sans-serif;
-    background-image: url("https://etimg.etb2bimg.com/photo/121816686.cms");
+    background-color: #f4f4f4;
+    background-image: url("https://etimg.etb2bimg.com/photo/121816816.cms");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 }
 
-.navbar {
-    background-color: #0144a9;
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#0144a9;
     color: white;
-    text-align: center;
-    padding: 18px;
+    padding :12px;
 }
 
-.container {
+.container{
     display: flex;
     justify-content: center;
     margin-top: 40px;
 }
 
-.bill-form {
+.connection-form{
     background-color: white;
     padding: 30px;
-    width: 400px;
-    border-radius: 8px;
+    width: 400px
 }
 
-.bill-form h2 {
+h2{
     text-align: center;
     margin-bottom: 20px;
     color: #0144a9;
 }
 
-.bill-form label {
+.connection-form label{
+    width:100%;
     display: block;
     margin-top: 15px;
     margin-bottom: 5px;
+    gap: 25px;
 }
 
-.bill-form input,
-.bill-form select {
+.connection-form input{
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
 }
 
-.bill-form button {
+.connection-form button{
     width: 100%;
     margin-top: 20px;
     padding: 12px;
@@ -58,8 +64,4 @@ body {
     color: white;
     border-radius: 4px;
     cursor: pointer;
-}
-
-.bill-form button:hover {
-    background-color: #00327a;
 }
