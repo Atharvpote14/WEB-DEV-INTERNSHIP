@@ -1,0 +1,111 @@
+/* Fixed pixel widths */
+.grid {
+    display: grid;
+    grid-template-columns: 200px 400px 200px;
+    gap: 10px;
+}
+
+/* Fractional units */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+}
+
+/* repeat() examples */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 2fr);
+    gap: 10px;
+}
+
+/* Mixed units */
+.layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 10px;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 260px 1fr 200px;
+    gap: 10px;
+}
+
+/* Auto sizing */
+.grid {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+}
+
+/* Explicit rows */
+.layout {
+    display: grid;
+    grid-template-columns: 260px 1fr 200px;
+    grid-template-rows: 64px 1fr 56px;
+    gap: 10px;
+}
+
+/* Shorthand */
+.layout {
+    display: grid;
+    grid-template: 64px 1fr 56px / 260px 1fr 200px;
+    gap: 10px;
+}
+
+/* Demo styling */
+.box,
+.header,
+.sidebar,
+.main,
+.aside,
+.footer {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.box {
+    background: steelblue;
+}
+
+.header {
+    background: crimson;
+    grid-column: 1 / 4;
+}
+
+.sidebar {
+    background: orange;
+}
+
+.main {
+    background: seagreen;
+}
+
+.aside {
+    background: purple;
+}
+
+.footer {
+    background: black;
+    grid-column: 1 / 4;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}

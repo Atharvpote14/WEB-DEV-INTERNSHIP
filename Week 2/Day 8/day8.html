@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Practice</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h2 {
+            margin: 20px 0 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .box {
+            background-color: steelblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .layout {
+            display: grid;
+            grid-template:
+                64px 1fr 56px /
+                260px 1fr 200px;
+
+            gap: 10px;
+            height: 400px;
+        }
+
+        .header {
+            grid-column: 1 / 4;
+            background: crimson;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar {
+            background: orange;
+            padding: 20px;
+        }
+
+        .main {
+            background: seagreen;
+            color: white;
+            padding: 20px;
+        }
+
+        .aside {
+            background: purple;
+            color: white;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-column: 1 / 4;
+            background: black;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Grid Examples</h1>
+
+    <h2>4 Equal Columns (repeat(4, 1fr))</h2>
+
+    <div class="grid">
+        <div class="box">Column 1</div>
+        <div class="box">Column 2</div>
+        <div class="box">Column 3</div>
+        <div class="box">Column 4</div>
+    </div>
+
+    <h2>Page Layout Example</h2>
+
+    <div class="layout">
+        <header class="header">Header</header>
+
+        <aside class="sidebar">Sidebar</aside>
+
+        <main class="main">
+            Main Content Area
+        </main>
+
+        <aside class="aside">
+            Right Aside
+        </aside>
+
+        <footer class="footer">
+            Footer
+        </footer>
+    </div>
+
+</body>
+</html>
