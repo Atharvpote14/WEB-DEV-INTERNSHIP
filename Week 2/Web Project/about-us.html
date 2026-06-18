@@ -3,79 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Real Estate Agency - our story, mission, and why we are the trusted property partner in Pune.">
     <title>About Us | Real Estate Agency</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="about-us-style.css">
 </head>
 <body>
 
-    <header class="navbar">
-        <h2>Real Estate Agency</h2>
-
-        <nav aria-label="Primary">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="property.html">Properties</a></li>
-                <li><a href="about-us.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <a href="#" class="cta">Best Options</a>
-    </header>
-
-    <section class="about-hero">
-        <h1>About Our Agency</h1>
-
-        <p>
-            Helping families and businesses find
-            their dream properties in Pune.
-        </p>
-    </section>
-
-    <section class="about-section">
-        <h2>Our Story</h2>
-
-        <p>
-            Real Estate Agency was founded with a simple goal:
-            to make property buying, selling, and renting easy.
-            We believe every client deserves honest advice,
-            transparent pricing, and excellent service.
-        </p>
-
-        <p>
-            Over the years, we have helped hundreds of families
-            find their perfect homes and assisted investors in
-            securing valuable real estate opportunities.
-        </p>
-    </section>
-
-    <section class="why-us">
-        <h2>Why Choose Us?</h2>
-
-        <div class="why-grid">
-
-            <div class="why-card">
-                <h3>Verified Properties</h3>
-                <p>Every property is carefully verified.</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🏠 Real Estate Agency</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="property.html">Properties</a></li>
+                    <li class="nav-item"><a class="nav-link" href="best-options.html">Best Options</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about-us.html" aria-current="page">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <a href="best-options.html" class="btn btn-light ms-lg-3" aria-label="View best property options">Best Options</a>
             </div>
+        </div>
+    </nav>
 
-            <div class="why-card">
-                <h3>Expert Agents</h3>
-                <p>Experienced professionals guide you.</p>
+    <main>
+
+    <!-- Hero Section (BEM) -->
+    <section class="about-hero d-flex align-items-center justify-content-center text-center py-5" aria-labelledby="about-hero-heading">
+        <div class="container">
+            <div class="about-hero__content mx-auto" style="max-width: 800px;">
+                <h1 id="about-hero-heading" class="about-hero__heading display-4 fw-bold text-white mb-3">About Our Agency</h1>
+                <p class="about-hero__text lead text-white mx-auto">
+                    Helping families and businesses find their dream properties in Pune.
+                </p>
             </div>
-
-            <div class="why-card">
-                <h3>Best Locations</h3>
-                <p>Premium properties across Pune.</p>
-            </div>
-
         </div>
     </section>
 
-    <footer class="footer">
-        <p>© 2025 Real Estate Agency. All Rights Reserved.</p>
-        <p>Pune, Maharashtra</p>
+    <!-- Story Section (BEM) -->
+    <section class="about-story py-5" aria-labelledby="story-heading">
+        <div class="container">
+            <h2 id="story-heading" class="about-story__heading text-center mb-4">Our Story</h2>
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <p class="about-story__text mb-3">
+                        Real Estate Agency was founded with a simple goal:
+                        to make property buying, selling, and renting easy.
+                        We believe every client deserves honest advice,
+                        transparent pricing, and excellent service.
+                    </p>
+                    <p class="about-story__text mb-0">
+                        Over the years, we have helped hundreds of families
+                        find their perfect homes and assisted investors in
+                        securing valuable real estate opportunities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section (BEM) -->
+    <section class="about-why py-5 bg-white" aria-labelledby="why-heading">
+        <div class="container">
+            <h2 id="why-heading" class="about-why__heading text-center mb-5">Why Choose Us?</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <article class="about-why-card p-4 rounded-3 shadow-sm bg-light h-100 border-top border-primary border-4">
+                        <h3 class="about-why-card__title h5 mb-2">Verified Properties</h3>
+                        <p class="about-why-card__text mb-0">Every property is carefully verified.</p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="about-why-card p-4 rounded-3 shadow-sm bg-light h-100 border-top border-primary border-4">
+                        <h3 class="about-why-card__title h5 mb-2">Expert Agents</h3>
+                        <p class="about-why-card__text mb-0">Experienced professionals guide you.</p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="about-why-card p-4 rounded-3 shadow-sm bg-light h-100 border-top border-primary border-4">
+                        <h3 class="about-why-card__title h5 mb-2">Best Locations</h3>
+                        <p class="about-why-card__text mb-0">Premium properties across Pune.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer class="footer py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p class="mb-0">🏠 Real Estate Agency | © 2026 All Rights Reserved | 📞 <a href="tel:+919405647120" class="text-white text-decoration-none">+91 9405647120</a> | ✉️ <a href="mailto:atharvpote14@gmail.com" class="text-white text-decoration-none">atharvpote14@gmail.com</a> | Pune, Maharashtra</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

@@ -3,85 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read our Terms and Conditions for using Real Estate Agency website. Learn about property information, user responsibilities, and privacy policies.">
     <title>Terms & Conditions</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="terms-conditions.css">
 </head>
 <body>
 
-    <header class="navbar">
-        <h2>🏠 Real Estate Agency</h2>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">🏠 Real Estate Agency</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="property.html">Properties</a></li>
+                    <li class="nav-item"><a class="nav-link" href="best-options.html">Best Options</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <a href="best-options.html" class="btn btn-light ms-lg-3" aria-label="View best property options">Best Options</a>
+            </div>
+        </div>
+    </nav>
 
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="property.html">Properties</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <main>
 
-    <section class="hero">
-        <h1>Terms & Conditions</h1>
-        <p>Please read these terms carefully before using our website.</p>
+    <section class="hero d-flex align-items-center justify-content-center text-center py-5 bg-light" aria-labelledby="terms-heading">
+        <div class="container">
+            <h1 id="terms-heading" class="display-4 fw-bold mb-3">Terms & Conditions</h1>
+            <p class="lead">Please read these terms carefully before using our website.</p>
+        </div>
     </section>
 
-    <main class="terms-container">
+    <div class="terms-container container py-5">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <section class="term-card p-4 bg-white rounded-3 shadow-sm h-100 border-start border-primary border-4">
+                    <h2 class="h5">1. Acceptance of Terms</h2>
+                    <p class="mb-0">
+                        By accessing and using this website, you agree to comply
+                        with these Terms and Conditions.
+                    </p>
+                </section>
+            </div>
 
-        <section class="term-card">
-            <h2>1. Acceptance of Terms</h2>
-            <p>
-                By accessing and using this website, you agree to comply
-                with these Terms and Conditions.
-            </p>
-        </section>
+            <div class="col-md-6">
+                <section class="term-card p-4 bg-white rounded-3 shadow-sm h-100 border-start border-primary border-4">
+                    <h2 class="h5">2. Property Information</h2>
+                    <p class="mb-0">
+                        Property details, pricing, and availability shown on this
+                        website are for informational purposes only and may change
+                        without prior notice.
+                    </p>
+                </section>
+            </div>
 
-        <section class="term-card">
-            <h2>2. Property Information</h2>
-            <p>
-                Property details, pricing, and availability shown on this
-                website are for informational purposes only and may change
-                without prior notice.
-            </p>
-        </section>
+            <div class="col-md-6">
+                <section class="term-card p-4 bg-white rounded-3 shadow-sm h-100 border-start border-primary border-4">
+                    <h2 class="h5">3. User Responsibilities</h2>
+                    <p class="mb-0">
+                        Users must provide accurate information when contacting
+                        our agency and must not misuse the website.
+                    </p>
+                </section>
+            </div>
 
-        <section class="term-card">
-            <h2>3. User Responsibilities</h2>
-            <p>
-                Users must provide accurate information when contacting
-                our agency and must not misuse the website.
-            </p>
-        </section>
+            <div class="col-md-6">
+                <section class="term-card p-4 bg-white rounded-3 shadow-sm h-100 border-start border-primary border-4">
+                    <h2 class="h5">4. Third-Party Links</h2>
+                    <p class="mb-0">
+                        Our website may contain links to third-party websites.
+                        We are not responsible for their content or policies.
+                    </p>
+                </section>
+            </div>
 
-        <section class="term-card">
-            <h2>4. Third-Party Links</h2>
-            <p>
-                Our website may contain links to third-party websites.
-                We are not responsible for their content or policies.
-            </p>
-        </section>
+            <div class="col-md-6">
+                <section class="term-card p-4 bg-white rounded-3 shadow-sm h-100 border-start border-primary border-4">
+                    <h2 class="h5">5. Privacy</h2>
+                    <p class="mb-0">
+                        Any personal information submitted through forms will be
+                        handled responsibly and used only for communication purposes.
+                    </p>
+                </section>
+            </div>
 
-        <section class="term-card">
-            <h2>5. Privacy</h2>
-            <p>
-                Any personal information submitted through forms will be
-                handled responsibly and used only for communication purposes.
-            </p>
-        </section>
-
-        <section class="term-card">
-            <h2>6. Changes to Terms</h2>
-            <p>
-                We reserve the right to update these Terms and Conditions
-                at any time without prior notice.
-            </p>
-        </section>
+            <div class="col-md-6">
+                <section class="term-card p-4 bg-white rounded-3 shadow-sm h-100 border-start border-primary border-4">
+                    <h2 class="h5">6. Changes to Terms</h2>
+                    <p class="mb-0">
+                        We reserve the right to update these Terms and Conditions
+                        at any time without prior notice.
+                    </p>
+                </section>
+            </div>
+        </div>
+    </div>
 
     </main>
 
-    <footer class="footer">
-        <p>© 2025 Real Estate Agency. All Rights Reserved.</p>
-        <p>Pune, Maharashtra</p>
+    <footer class="footer py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p class="mb-0">🏠 Real Estate Agency | © 2026 All Rights Reserved | 📞 <a href="tel:+919405647120" class="text-white text-decoration-none">+91 9405647120</a> | ✉️ <a href="mailto:atharvpote14@gmail.com" class="text-white text-decoration-none">atharvpote14@gmail.com</a> | Pune, Maharashtra</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

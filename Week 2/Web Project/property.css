@@ -1,163 +1,86 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Properties Page Specific Styles (BEM) */
+
+/* Hero Section */
+.property-hero {
+    min-height: 70vh;
+    background: linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.8)),
+                url('https://images.unsplash.com/photo-1515266591878-f93e32bc5937?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #f5f7fa;
-    color: #333;
-    line-height: 1.6;
+.property-hero__content {
+    animation: fadeInUp 0.8s ease-out;
 }
 
-/* Navbar */
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    background: #0f172a;
-    position: sticky;
-    top: 0;
+.property-hero__heading {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
-.navbar h2 {
-    color: white;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 5px;
-}
-
-.nav-links a:hover {
-    background: rgba(255,255,255,0.15);
-}
-
-.cta {
-    text-decoration: none;
-    background: #2563eb;
-    color: white;
-    padding: 10px 18px;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-.cta:hover {
-    background: #1d4ed8;
-}
-
-/* Header */
-
-.page-header {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(to right, #dbeafe, #bfdbfe);
-}
-
-.page-header h1 {
-    font-size: 2.5rem;
-    color: #1e3a8a;
-    margin-bottom: 10px;
-}
-
-.page-header p {
-    color: #475569;
-}
-
-/* Property Grid */
-
-.properties-grid {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-}
-
-/* Property Card */
-
+/* Cards Section */
 .property-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-
-    transition: transform 0.3s ease;
+    transition: var(--transition-base);
 }
 
 .property-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-hover) !important;
 }
 
-.property-card img {
-    width: 100%;
+.property-card__img-container {
     height: 220px;
+    overflow: hidden;
+}
+
+.property-card__img {
+    height: 100%;
     object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
-.property-content {
-    padding: 20px;
+.property-card:hover .property-card__img {
+    transform: scale(1.1);
 }
 
-.property-content h3 {
-    color: #1e3a8a;
-    margin-bottom: 8px;
+.property-card__title {
+    color: var(--primary);
 }
 
-.location {
-    color: #64748b;
-    margin-bottom: 10px;
+.property-card__price {
+    transition: var(--transition-fast);
 }
 
-.price {
-    display: inline-block;
-    margin-top: 15px;
-    font-weight: bold;
-    color: #2563eb;
-    opacity: 0.6;
-    font-size: 1.1rem;
-
+.property-card:hover .property-card__price {
+    color: var(--accent) !important;
 }
 
-/* Footer */
-
-.footer {
-    text-align: center;
-    padding: 20px;
-    background: #0f172a;
-    color: white;
-    margin-top: 40px;
+/* Card Button */
+.property-card__btn {
+    transition: var(--transition-base);
 }
 
-/* Responsive */
+.property-card__btn:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
 
-@media (max-width: 768px) {
+/* Card Animations */
+.property-card:nth-child(1) { animation: scaleIn 0.6s ease-out 0.1s backwards; }
+.property-card:nth-child(2) { animation: scaleIn 0.6s ease-out 0.2s backwards; }
+.property-card:nth-child(3) { animation: scaleIn 0.6s ease-out 0.3s backwards; }
+.property-card:nth-child(4) { animation: scaleIn 0.6s ease-out 0.4s backwards; }
+.property-card:nth-child(5) { animation: scaleIn 0.6s ease-out 0.5s backwards; }
+.property-card:nth-child(6) { animation: scaleIn 0.6s ease-out 0.6s backwards; }
 
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
-    }
+/* Keyframes */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .page-header h1 {
-        font-size: 2rem;
-    }
+@keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
 }
