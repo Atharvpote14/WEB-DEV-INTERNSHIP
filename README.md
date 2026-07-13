@@ -18,7 +18,7 @@
 
 ---
 
-## <picture><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Books.png" alt="Books" width="30" height="30" /></picture> About
+## 📖 About
 
 <div align="center">
   <table>
@@ -46,11 +46,11 @@
 <div align="center">
   <table>
     <tr>
-      <td align="center" width="100"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Globe%20Showing%20Asia-Australia.png" alt="Daily Work" width="40"/><br/><b>30+</b><br/>Daily Assignments</td>
-      <td align="center" width="100"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" alt="Exercises" width="40"/><br/><b>20+</b><br/>Coding Exercises</td>
-      <td align="center" width="100"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Globe%20with%20Meridians.png" alt="Web Apps" width="40"/><br/><b>15+</b><br/>Web Applications</td>
-      <td align="center" width="100"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gear.png" alt="React" width="40"/><br/><b>8+</b><br/>React Projects</td>
-      <td align="center" width="100"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Artist%20Palette.png" alt="Designs" width="40"/><br/><b>25+</b><br/>HTML & CSS Designs</td>
+      <td align="center" width="100">🌏<br/><b>30+</b><br/>Daily Assignments</td>
+      <td align="center" width="100">💻<br/><b>20+</b><br/>Coding Exercises</td>
+      <td align="center" width="100">🌐<br/><b>15+</b><br/>Web Applications</td>
+      <td align="center" width="100">⚙️<br/><b>8+</b><br/>React Projects</td>
+      <td align="center" width="100">🎨<br/><b>25+</b><br/>HTML & CSS Designs</td>
     </tr>
   </table>
 </div>
@@ -59,7 +59,7 @@
 
 ---
 
-## <picture><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer%20and%20Wrench.png" alt="Tech" width="30" height="30" /></picture> Tech Stack
+## 🔧 Tech Stack
 
 <div align="center">
 
@@ -93,7 +93,7 @@
 
 ---
 
-## <picture><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Open%20File%20Folder.png" alt="Structure" width="30" height="30" /></picture> Repository Structure
+## 📂 Repository Structure
 
 ```text
 📦 WEB-DEV-INTERNSHIP
@@ -117,20 +117,20 @@
 
 ---
 
-## <picture><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Rocket.png" alt="Projects" width="30" height="30" /></picture> Projects Showcase
+## 🚀 Projects Showcase
 
 <div align="center">
 
 | Project | Description | Tech | Status |
 |:-------:|:------------|:----:|:------:|
-| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Globe%20Showing%20Americas.png" width="20"/> **Country Explorer** | Explore countries with live data | `React` `API` | ✅ Complete |
-| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Calculator.png" width="20"/> **Calculator** | Fully functional calculator | `HTML` `CSS` `JS` | ✅ Complete |
-| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Clock%20Sprite%20Animation.png" width="20"/> **Digital Clock** | Real-time digital clock | `HTML` `CSS` `JS` | ✅ Complete |
-| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Clipboard.png" width="20"/> **To-Do List** | Task management app | `React` | ✅ Complete |
-| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" width="20"/> **Student Dashboard** | Data visualization dashboard | `React` `CSS` | ✅ Complete |
-| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Page%20with%20Curl.png" width="20"/> **Responsive Pages** | Mobile-first layouts | `HTML` `CSS` | ✅ Complete |
-| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Desktop%20Computer.png" width="20"/> **User Dashboard** | React user management | `React` | ✅ Complete |
-| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Link.png" width="20"/> **API Integration** | Fetch & display API data | `JS` `API` | ✅ Complete |
+| 🌎 **Country Explorer** | Explore countries with live data | `React` `API` | ✅ Complete |
+| 🧮 **Calculator** | Fully functional calculator | `HTML` `CSS` `JS` | ✅ Complete |
+| 🕐 **Digital Clock** | Real-time digital clock | `HTML` `CSS` `JS` | ✅ Complete |
+| 📋 **To-Do List** | Task management app | `React` | ✅ Complete |
+| 📊 **Student Dashboard** | Data visualization dashboard | `React` `CSS` | ✅ Complete |
+| 📄 **Responsive Pages** | Mobile-first layouts | `HTML` `CSS` | ✅ Complete |
+| 🖥️ **User Dashboard** | React user management | `React` | ✅ Complete |
+| 🔗 **API Integration** | Fetch & display API data | `JS` `API` | ✅ Complete |
 
 </div>
 
@@ -138,7 +138,7 @@
 
 ---
 
-## <picture><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Spiral%20Calendar.png" alt="Timeline" width="30" height="30" /></picture> Learning Timeline
+## 📅 Learning Timeline
 
 <div align="center">
 
@@ -169,50 +169,84 @@ timeline
 
 ---
 
-## <picture><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Chart%20Increasing.png" alt="Progress" width="30" height="30" /></picture> Skill Progress
+## 📈 Skill Progress
 
 <div align="center">
-  <table>
-    <tr>
-      <td width="200"><b>📄 HTML5</b></td>
-      <td width="400"><img src="https://progress-bar.dev/95/?title=&width=400&color=FF6B6B"/></td>
-    </tr>
-    <tr>
-      <td><b>🎨 CSS3</b></td>
-      <td><img src="https://progress-bar.dev/90/?title=&width=400&color=00C9FF"/></td>
-    </tr>
-    <tr>
-      <td><b>⚡ JavaScript</b></td>
-      <td><img src="https://progress-bar.dev/85/?title=&width=400&color=FFD93D"/></td>
-    </tr>
-    <tr>
-      <td><b>⚛️ React.js</b></td>
-      <td><img src="https://progress-bar.dev/75/?title=&width=400&color=61DAFB"/></td>
-    </tr>
-    <tr>
-      <td><b>🔗 REST APIs</b></td>
-      <td><img src="https://progress-bar.dev/80/?title=&width=400&color=6BCB77"/></td>
-    </tr>
-    <tr>
-      <td><b>📱 Responsive Design</b></td>
-      <td><img src="https://progress-bar.dev/90/?title=&width=400&color=92FE9D"/></td>
-    </tr>
-    <tr>
-      <td><b>🐙 Git & GitHub</b></td>
-      <td><img src="https://progress-bar.dev/85/?title=&width=400&color=764ABC"/></td>
-    </tr>
-    <tr>
-      <td><b>🧩 Problem Solving</b></td>
-      <td><img src="https://progress-bar.dev/80/?title=&width=400&color=FF8C00"/></td>
-    </tr>
-  </table>
+
+<table>
+  <tr>
+    <td width="200"><b>📄 HTML5</b></td>
+    <td width="400">
+      <div style="background-color:#e0e0e0;border-radius:10px;overflow:hidden">
+        <div style="width:95%;height:24px;background:linear-gradient(90deg,#FF6B6B,#ee5a24);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold;font-size:13px">95%</div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td><b>🎨 CSS3</b></td>
+    <td>
+      <div style="background-color:#e0e0e0;border-radius:10px;overflow:hidden">
+        <div style="width:90%;height:24px;background:linear-gradient(90deg,#00C9FF,#0072ff);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold;font-size:13px">90%</div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td><b>⚡ JavaScript</b></td>
+    <td>
+      <div style="background-color:#e0e0e0;border-radius:10px;overflow:hidden">
+        <div style="width:85%;height:24px;background:linear-gradient(90deg,#FFD93D,#f0932b);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#333;font-weight:bold;font-size:13px">85%</div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td><b>⚛️ React.js</b></td>
+    <td>
+      <div style="background-color:#e0e0e0;border-radius:10px;overflow:hidden">
+        <div style="width:75%;height:24px;background:linear-gradient(90deg,#61DAFB,#3498db);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold;font-size:13px">75%</div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td><b>🔗 REST APIs</b></td>
+    <td>
+      <div style="background-color:#e0e0e0;border-radius:10px;overflow:hidden">
+        <div style="width:80%;height:24px;background:linear-gradient(90deg,#6BCB77,#27ae60);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold;font-size:13px">80%</div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td><b>📱 Responsive Design</b></td>
+    <td>
+      <div style="background-color:#e0e0e0;border-radius:10px;overflow:hidden">
+        <div style="width:90%;height:24px;background:linear-gradient(90deg,#92FE9D,#00b894);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold;font-size:13px">90%</div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td><b>🐙 Git & GitHub</b></td>
+    <td>
+      <div style="background-color:#e0e0e0;border-radius:10px;overflow:hidden">
+        <div style="width:85%;height:24px;background:linear-gradient(90deg,#764ABC,#6c5ce7);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold;font-size:13px">85%</div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td><b>🧩 Problem Solving</b></td>
+    <td>
+      <div style="background-color:#e0e0e0;border-radius:10px;overflow:hidden">
+        <div style="width:80%;height:24px;background:linear-gradient(90deg,#FF8C00,#e17055);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold;font-size:13px">80%</div>
+      </div>
+    </td>
+  </tr>
+</table>
+
 </div>
 
 <br/>
 
 ---
 
-## <picture><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Dartboard.png" alt="Objectives" width="30" height="30" /></picture> Objectives
+## 🎯 Objectives
 
 <details>
 <summary><b>🎯 Click to expand</b></summary>
@@ -236,7 +270,7 @@ timeline
 
 ---
 
-## <picture><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Check%20Mark%20Button.png" alt="Achievements" width="30" height="30" /></picture> Achievements
+## ✅ Achievements
 
 <div align="center">
 
@@ -257,18 +291,12 @@ timeline
 
 ---
 
-## <picture><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Man%20Technologist.png" alt="Author" width="30" height="30" /></picture> Author
+## 👨‍💻 Author
 
 <div align="center">
   <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Atharv&backgroundColor=00C9FF" width="120" height="120" alt="avatar"/>
   
-  <h2>
-    <picture>
-      <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/512.webp" type="image/webp">
-      <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/512.gif" alt="👋" width="28" height="28">
-    </picture>
-    Atharv Pote
-  </h2>
+  <h2>👋 Atharv Pote</h2>
   
   <p><b>Passionate Web Developer</b></p>
   
