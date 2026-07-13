@@ -294,7 +294,7 @@ timeline
 ## 👨‍💻 Author
 
 <div align="center">
-  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Atharv&backgroundColor=00C9FF" width="120" height="120" alt="avatar"/>
+  <img src="https://avatars.githubusercontent.com/u/223859743?s=400&u=52568610b96d979f6d3f66dc726336cdd1e71661&v=4" width="120" height="120" style="border-radius:50%" alt="avatar"/>
   
   <h2>👋 Atharv Pote</h2>
   
