@@ -309,9 +309,6 @@ timeline
   
   <br/>
   
-  <b>📊 GitHub Stats</b><br/><br/>
-  <img src="https://github-readme-stats.vercel.app/api?username=Atharvpote14&show_icons=true&theme=transparent&hide_border=true&icon_color=00C9FF&text_color=ffffff&title_color=92FE9D" alt="GitHub Stats"/>
-  <br/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Atharvpote14&theme=transparent&hide_border=true&ring=00C9FF&fire=FF6B6B&currStreakNum=ffffff&sideNums=92FE9D&dates=cccccc" alt="GitHub Streak"/>
   
 </div>
