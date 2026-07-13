@@ -24,7 +24,7 @@
 
     background:#3498db;
 
-    color:white;
+    color:rgb(0, 0, 0);
 
     display:flex;
 
@@ -42,7 +42,7 @@
 
 .light{
 
-    background:white;
+    background:rgb(61, 54, 54);
 
     color:black;
 
