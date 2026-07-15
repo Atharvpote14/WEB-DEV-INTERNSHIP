@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 import Sidebar from "./components/Sidebar/Sidebar";
 import ProgressBar from "./components/ProgressBar/ProgressBar";
 import PersonalInfo from "./components/Steps/PersonalInfo";
@@ -15,45 +17,45 @@ const initialFormData = {
   email: "",
   password: "",
   confirmPassword: "",
-  mobileNumber: "", 
-  alternateMobile: "", 
-  dob: "", 
-  gender: "", 
+  mobileNumber: "",
+  alternateMobile: "",
+  dob: "",
+  gender: "",
   bloodGroup: "",
   nationality: "Indian",
-  maritalStatus: "Single", 
-  aadhaar: "", 
+  maritalStatus: "Single",
+  aadhaar: "",
   pan: "",
-  website: "", 
-  linkedin: "", 
-  favoriteColor: "#6C63FF", 
+  website: "",
+  linkedin: "",
+  favoriteColor: "#6C63FF",
   profilePicture: null,
-  shortBio: "", 
+  shortBio: "",
   acceptTerms: false,
-  addressLine1: "", 
-  addressLine2: "", 
-  landmark: "", 
-  city: "", 
+  addressLine1: "",
+  addressLine2: "",
+  landmark: "",
+  city: "",
   state: "",
-  country: "India", 
-  pincode: "", 
+  country: "India",
+  pincode: "",
   addressType: "",
-  highestQualification: "", 
-  collegeName: "", 
-  degree: "", 
+  highestQualification: "",
+  collegeName: "",
+  degree: "",
   branch: "",
-  passingYear: "", 
-  cgpa: "", 
-  currentStatus: "", 
-  skills: [], 
+  passingYear: "",
+  cgpa: "",
+  currentStatus: "",
+  skills: [],
   certifications: [],
-  theme: "System", 
-  languagesKnown: [], 
-  notifications: [], 
+  theme: "System",
+  languagesKnown: [],
+  notifications: [],
   interests: [],
-  hobbies: [], 
-  privacySettings: [], 
-  newsletter: "Yes", 
+  hobbies: [],
+  privacySettings: [],
+  newsletter: "Yes",
   preferredContact: "",
 };
 
@@ -124,17 +126,21 @@ function App() {
 
   return (
     <div className="app">
-      <Sidebar currentStep={currentStep} />
-      <div className="main">
-        <div className="main-header">
-          <h1>Multi-Step Registration</h1>
-          <p>Complete all steps to register</p>
-        </div>
-        <ProgressBar currentStep={currentStep} />
-        <div className="formCard">
-          {renderStep()}
+      <Navbar currentStep={currentStep} />
+      <div id="form" className="app-body">
+        <Sidebar currentStep={currentStep} />
+        <div className="main">
+          <div className="main-header">
+            <h1>Multi-Step Registration</h1>
+            <p>Complete all steps to register</p>
+          </div>
+          <ProgressBar currentStep={currentStep} />
+          <div className="formCard">
+            {renderStep()}
+          </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

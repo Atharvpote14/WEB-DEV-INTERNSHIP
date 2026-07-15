@@ -25,7 +25,9 @@ function PersonalInfo({ formData, onNext }) {
   const password = watch("password");
 
   useEffect(() => {
-    trigger("confirmPassword");
+    if (password) {
+      trigger("confirmPassword");
+    }
   }, [password, trigger]);
 
   function onSubmit(data) {

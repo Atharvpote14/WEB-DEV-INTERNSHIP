@@ -1,14 +1,23 @@
 .app {
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background: #f0f2f5;
+}
+
+.app-body {
+  display: flex;
+  flex: 1;
+}
+
+.app-body .sidebar {
+  min-height: 100%;
 }
 
 .main {
   flex: 1;
   padding: 40px 50px;
   overflow-y: auto;
-  max-height: 100vh;
 }
 
 .main-header {
@@ -816,6 +825,8 @@
   body {
     background: #fff !important;
   }
+  .navbar,
+  .footer,
   .sidebar,
   .main-header,
   .progress-wrapper,
@@ -898,7 +909,7 @@
 }
 
 @media (max-width: 768px) {
-  .app {
+  .app-body {
     flex-direction: column;
   }
 }
