@@ -1,0 +1,101 @@
+.sidebar{
+
+    width:280px;
+
+    min-height:100vh;
+
+    background:linear-gradient(180deg,#6C63FF,#4F46E5);
+
+    color:white;
+
+    padding:30px;
+
+    flex-shrink:0;
+
+}
+
+.logo{
+
+    margin-bottom:50px;
+
+}
+
+.logo h2{
+
+    font-size:30px;
+
+    margin-bottom:8px;
+
+}
+
+.logo p{
+
+    color:#ddd;
+
+}
+
+.step-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.step{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    opacity:.65;
+
+    transition:.3s;
+
+}
+
+.circle{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.2);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:bold;
+
+}
+
+.active{
+
+    opacity:1;
+
+}
+
+.active .circle{
+
+    background:white;
+
+    color:#4F46E5;
+
+}
+
+.step span{
+
+    font-size:17px;
+
+    font-weight:500;
+
+}
