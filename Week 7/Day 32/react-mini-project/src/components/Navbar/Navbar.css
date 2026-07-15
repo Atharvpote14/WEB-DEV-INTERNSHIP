@@ -184,7 +184,17 @@
 
 /* ---------- Responsive ---------- */
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+  .navbar-inner {
+    padding: 0 24px;
+  }
+
+  .navbar-date {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
   .navbar-links {
     position: fixed;
     top: 70px;
@@ -201,6 +211,7 @@
     transition: all 0.35s ease;
     pointer-events: none;
     border-radius: 0 0 20px 20px;
+    z-index: 999;
   }
 
   .navbar-links.open {
@@ -218,21 +229,42 @@
     display: flex;
   }
 
-  .navbar-date {
-    display: none;
-  }
-
   .navbar-step-info {
     display: none;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
+  .navbar {
+    height: 60px;
+  }
+
   .navbar-inner {
-    padding: 0 16px;
+    padding: 0 14px;
+  }
+
+  .navbar-logo {
+    font-size: 24px;
   }
 
   .navbar-brand {
-    font-size: 15px;
+    font-size: 14px;
+  }
+
+  .navbar-links {
+    top: 60px;
+  }
+
+  .navbar-right {
+    gap: 8px;
+  }
+
+  .theme-toggle {
+    font-size: 18px;
+    padding: 4px;
+  }
+
+  .navbar-avatar {
+    font-size: 20px;
   }
 }

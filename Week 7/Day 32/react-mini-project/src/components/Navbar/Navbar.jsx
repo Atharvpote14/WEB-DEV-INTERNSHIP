@@ -55,7 +55,7 @@ function Navbar({ currentStep }) {
 
         <div className="navbar-right">
           <div className="navbar-step-info">
-            <span className="step-badge">Step {currentStep} of 5</span>
+            <span className="step-badge">{currentStep === 0 ? "Start" : `Step ${currentStep} of 5`}</span>
             <span className="step-pct">{percentage}%</span>
           </div>
           <button

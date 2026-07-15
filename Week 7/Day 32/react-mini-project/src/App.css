@@ -307,6 +307,24 @@
   color: #4F46E5;
 }
 
+.welcome-screen {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.welcome-screen h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+}
+
+.welcome-screen p {
+  color: #888;
+  font-size: 16px;
+  margin-bottom: 36px;
+}
+
 .btn-group {
   display: flex;
   justify-content: flex-end;
@@ -819,6 +837,479 @@
   justify-content: center;
 }
 
+/* ---------- Responsive: Tablet (max-width: 1024px) ---------- */
+
+@media (max-width: 1024px) {
+  .main {
+    padding: 30px 28px;
+  }
+
+  .main-header h1 {
+    font-size: 30px;
+  }
+
+  .formCard h2 {
+    font-size: 20px;
+  }
+
+  .formCard {
+    padding: 32px;
+  }
+
+  .success-title {
+    font-size: 28px;
+  }
+
+  .summary-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+}
+
+/* ---------- Responsive: Large Mobile / Small Tablet (max-width: 768px) ---------- */
+
+@media (max-width: 768px) {
+  .app-body {
+    flex-direction: column;
+  }
+
+  .main {
+    padding: 24px 20px;
+  }
+
+  .main-header h1 {
+    font-size: 26px;
+  }
+
+  .main-header p {
+    font-size: 13px;
+  }
+
+  .formCard {
+    padding: 24px;
+    border-radius: 18px;
+  }
+
+  .formCard h2 {
+    font-size: 19px;
+  }
+
+  .step-desc {
+    font-size: 13px;
+    margin-bottom: 22px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .summary-grid {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
+  }
+
+  .checkbox-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .cert-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-input-row {
+    flex-direction: column;
+  }
+
+  .skills-input-row input {
+    width: 100%;
+  }
+
+  .btn-add {
+    width: 100%;
+  }
+
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-grid {
+    gap: 12px;
+  }
+
+  .edit-btn {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+
+  .success-title {
+    font-size: 24px;
+  }
+
+  .success-subtitle {
+    font-size: 15px;
+  }
+
+  .success-icon {
+    font-size: 60px;
+  }
+
+  .success-id {
+    padding: 16px 24px;
+  }
+
+  .id-value {
+    font-size: 18px;
+  }
+
+  .welcome-screen {
+    padding: 40px 16px;
+  }
+
+  .welcome-screen h2 {
+    font-size: 24px;
+  }
+
+  .welcome-screen p {
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+
+  .section-card {
+    padding: 20px;
+    margin-bottom: 18px;
+  }
+
+  .section-title {
+    font-size: 16px;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+  }
+
+  .summary-item {
+    padding: 10px 14px;
+  }
+
+  .summary-value {
+    font-size: 14px;
+  }
+
+  .cert-card {
+    padding: 14px 16px;
+  }
+
+  .cert-card-body h4 {
+    font-size: 14px;
+  }
+}
+
+/* ---------- Responsive: Mobile (max-width: 480px) ---------- */
+
+@media (max-width: 480px) {
+  .main {
+    padding: 16px 12px;
+  }
+
+  .main-header {
+    margin-bottom: 6px;
+  }
+
+  .main-header h1 {
+    font-size: 22px;
+  }
+
+  .main-header p {
+    font-size: 12px;
+  }
+
+  .formCard {
+    padding: 18px 16px;
+    border-radius: 16px;
+  }
+
+  .formCard h2 {
+    font-size: 17px;
+  }
+
+  .step-desc {
+    font-size: 12px;
+    margin-bottom: 18px;
+  }
+
+  .grid {
+    gap: 14px;
+  }
+
+  .input-group label {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .input-group input,
+  .input-group select,
+  .input-group textarea {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .input-group input.has-icon {
+    padding-left: 36px;
+  }
+
+  .input-icon {
+    left: 12px;
+    font-size: 14px;
+  }
+
+  .color-wrapper {
+    padding: 6px 12px;
+  }
+
+  .color-wrapper input[type="color"] {
+    width: 36px;
+    height: 36px;
+  }
+
+  .file-label {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+
+  .preview-img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .bio-wrapper textarea {
+    min-height: 80px;
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+
+  .checkbox-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+
+  .checkbox-label {
+    font-size: 13px !important;
+    padding: 6px 10px;
+  }
+
+  .checkbox-label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+  }
+
+  .radio-group-horizontal {
+    gap: 12px;
+  }
+
+  .radio-label {
+    font-size: 13px !important;
+  }
+
+  .radio-label input[type="radio"] {
+    width: 16px;
+    height: 16px;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    margin-top: 24px;
+    gap: 10px;
+  }
+
+  .btn-prev {
+    margin-right: 0;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 24px;
+    min-height: 48px;
+    font-size: 15px;
+  }
+
+  .btn-add {
+    min-height: 44px;
+    font-size: 13px;
+  }
+
+  .section-card {
+    padding: 16px;
+    margin-bottom: 14px;
+    border-radius: 16px;
+  }
+
+  .section-title {
+    font-size: 15px;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .summary-item {
+    padding: 8px 12px;
+  }
+
+  .summary-label {
+    font-size: 10px;
+  }
+
+  .summary-value {
+    font-size: 13px;
+  }
+
+  .review-grid {
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .review-item {
+    gap: 2px;
+  }
+
+  .review-label {
+    font-size: 10px;
+  }
+
+  .review-value {
+    font-size: 14px;
+  }
+
+  .review-img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .color-swatch {
+    width: 22px;
+    height: 22px;
+  }
+
+  .edit-btn {
+    padding: 5px 12px;
+    font-size: 11px;
+  }
+
+  .cert-form-grid {
+    gap: 10px;
+  }
+
+  .cert-form-grid input {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .cert-card {
+    padding: 12px 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .cert-card-body h4 {
+    font-size: 13px;
+  }
+
+  .cert-card-body p {
+    font-size: 12px;
+  }
+
+  .cert-remove {
+    align-self: flex-end;
+  }
+
+  .skills-input-row {
+    gap: 8px;
+  }
+
+  .skills-input-row input {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .skill-chip {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .welcome-screen {
+    padding: 30px 12px;
+  }
+
+  .welcome-screen h2 {
+    font-size: 20px;
+  }
+
+  .welcome-screen p {
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+
+  .success-screen {
+    padding: 24px 12px;
+  }
+
+  .success-icon {
+    font-size: 48px;
+  }
+
+  .success-title {
+    font-size: 20px;
+  }
+
+  .success-subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .success-id {
+    padding: 14px 18px;
+    margin-bottom: 24px;
+  }
+
+  .id-label {
+    font-size: 10px;
+  }
+
+  .id-value {
+    font-size: 16px;
+  }
+
+  .success-actions {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .success-actions .btn-primary,
+  .success-actions .btn-secondary {
+    width: 100%;
+  }
+
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .error {
+    font-size: 11px;
+    margin-top: 4px;
+  }
+
+  .char-counter {
+    font-size: 11px;
+    bottom: 8px;
+    right: 10px;
+  }
+}
+
 /* ---------- Print Styles ---------- */
 
 @media print {
@@ -862,24 +1353,6 @@
   }
 }
 
-@media (max-width: 900px) {
-  .cert-form-grid {
-    grid-template-columns: 1fr;
-  }
-  .skills-input-row {
-    flex-direction: column;
-  }
-  .skills-input-row input {
-    width: 100%;
-  }
-  .btn-add {
-    width: 100%;
-  }
-  .review-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* animation for step transitions */
 .formCard {
   animation: fadeSlideIn 0.4s ease;
@@ -893,23 +1366,5 @@
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@media (max-width: 900px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-  .main {
-    padding: 24px 20px;
-  }
-  .formCard {
-    padding: 24px;
-  }
-}
-
-@media (max-width: 768px) {
-  .app-body {
-    flex-direction: column;
   }
 }

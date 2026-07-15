@@ -60,7 +60,7 @@ const initialFormData = {
 };
 
 function App() {
-  const [currentStep, setCurrentStep] = useState(1);
+  const [currentStep, setCurrentStep] = useState(0);
   const [formData, setFormData] = useState(initialFormData);
 
   function handleNext(stepData) {
@@ -70,7 +70,7 @@ function App() {
 
   function handlePrev(stepData) {
     setFormData(prev => ({ ...prev, ...stepData }));
-    setCurrentStep(prev => Math.max(prev - 1, 1));
+    setCurrentStep(prev => Math.max(prev - 1, 0));
   }
 
   function goToStep(step) {
@@ -79,11 +79,25 @@ function App() {
 
   function handleReset() {
     setFormData(initialFormData);
+    setCurrentStep(0);
+  }
+
+  function handleStart() {
     setCurrentStep(1);
   }
 
   function renderStep() {
     switch (currentStep) {
+      case 0:
+        return (
+          <div className="welcome-screen">
+            <h2>Welcome to the Registration Portal</h2>
+            <p>Complete all 5 steps to register. Click the button below to get started.</p>
+            <button className="btn-primary" onClick={handleStart}>
+              Start Registration →
+            </button>
+          </div>
+        );
       case 1:
         return <PersonalInfo formData={formData} onNext={handleNext} />;
       case 2:
